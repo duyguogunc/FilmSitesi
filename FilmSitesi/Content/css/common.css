@@ -1,0 +1,783 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ul {
+	list-style: none outside none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+::-moz-selection {
+ color: #ffffff;
+ background-color: #2E9EA8;
+}
+::selection {
+	color: #ffffff;
+	background-color: #2E9EA8;
+}
+a {
+	color: #206c73;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+/* change colours to suit your needs */
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+/* change colours to suit your needs */
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* change border colour to suit your needs */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+input, select {
+	vertical-align: middle;
+	outline:none;
+}
+button {
+	padding:0;
+	border:0 none;
+	cursor:pointer;
+	background:none;
+}
+button::-moz-focus-inner {
+ border: 0;
+ padding: 0;
+}
+textarea {
+	outline:none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+/*
+ * Superfish v1.4.8 - jQuery menu widget
+ * Copyright (c) 2008 Joel Birch
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ * 	http://www.opensource.org/licenses/mit-license.php
+ * 	http://www.gnu.org/licenses/gpl.html
+ *
+ * CHANGELOG: http://users.tpg.com.au/j_birch/plugins/superfish/changelog.txt
+ */
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul, .sf-menu li.sfHover ul {
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul, ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul, ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+/*** DEMO SKIN ***/
+.sf-menu {
+	float:			left;
+	margin-bottom:	1em;
+}
+.sf-menu a {
+	padding: 		.75em 1em;
+	text-decoration:none;
+}
+.sf-menu a, .sf-menu a:visited { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#13a;
+}
+.sf-menu li {
+	background:		#BDD2FF;
+}
+.sf-menu li li {
+	background:		#AABDE6;
+}
+.sf-menu li li li {
+	background:		#9AAEDB;
+}
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	background:		#CFDEFF;
+	outline:		0;
+}
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+	padding-right: 	2.25em;
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			.75em;
+	top:			1.05em; /* IE6 only */
+	width:			10px;
+	height:			10px;
+	text-indent: 	-999em;
+	overflow:		hidden;/*	background:		url('../images/arrows-ffffff.png') no-repeat -10px -100px; 8-bit indexed alpha png. IE6 gets solid image only */
+}
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top:			.8em;
+	background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-indicator, li:hover > a > .sf-sub-indicator, li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+/* point right for anchors in subs */
+.sf-menu ul .sf-sub-indicator {
+	background-position:  -10px 0;
+}
+.sf-menu ul a > .sf-sub-indicator {
+	background-position:  0 0;
+}
+/* apply hovers to modern browsers */
+.sf-menu ul a:focus > .sf-sub-indicator, .sf-menu ul a:hover > .sf-sub-indicator, .sf-menu ul a:active > .sf-sub-indicator, .sf-menu ul li:hover > a > .sf-sub-indicator, .sf-menu ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+/*
+ * jQuery UI CSS Framework 1.8.17
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px,1px,1px,1px);
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix {
+	zoom: 1;
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+/*
+ * jQuery UI Accordion 1.8.17
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Accordion#theming
+ */
+/* IE/Win - Fix animation bug - #4615 */
+.ui-accordion {
+	width: 100%;
+	margin-bottom:20px;
+}
+.ui-accordion .ui-accordion-header {
+	cursor: pointer;
+	position: relative;
+	margin: 0 0 2px;
+	zoom: 1;
+	font-size:16px;
+	color:#121212;
+	background:#d6d6d6 url(../images/bg_accordion.png) repeat-x;
+	height:40px;
+	line-height:40px;
+	padding:0 15px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.ui-accordion .ui-state-active {
+	margin: 0 !important;
+	-webkit-border-bottom-right-radius: 0 !important;
+	-webkit-border-bottom-left-radius: 0 !important;
+	-moz-border-radius-bottomright: 0 !important;
+	-moz-border-radius-bottomleft: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+.ui-accordion .ui-accordion-li-fix {
+	display: inline;
+}
+.ui-accordion .ui-accordion-header-active {
+	border-bottom: 0 !important;
+}
+.ui-accordion .ui-accordion-header a {
+	display: block;
+	font-size: 1em;
+	padding: .5em .5em .5em .7em;
+}
+.ui-accordion-icons .ui-accordion-header a {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+	background:#ffffff;
+	padding: 15px 10px;
+	border: 1px solid #cccccc;
+	border-top: 1px dashed #cccccc;
+	-webkit-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	margin-top: 0;
+	margin-bottom:2px;
+	position: relative;
+	top: 0;
+	overflow: auto;
+	display: none;
+	zoom: 1;
+}
+.ui-accordion .ui-accordion-content p {
+	margin:0 !important;
+}
+.ui-accordion .ui-accordion-content-active {
+	display: block;
+}
+/*
+ * jQuery UI Tabs 1.8.17
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs {
+	margin-bottom: 20px;
+	position: relative;
+	zoom: 1;
+} /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+	height: 40px;
+	padding: 0 15px;
+	background:#c8c8c8 url(../images/bg_accordion.png) repeat-x;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+.ui-tabs .ui-tabs-nav li {
+	position: relative;
+	top: 0;
+	white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+	cursor: pointer;
+} /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	background:#ffffff !important;
+	padding: 15px 10px 5px !important;
+	border: 1px solid #cccccc;
+	border-top: 1px dashed #cccccc;
+	-webkit-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+.ui-tabs .ui-tabs-hide {
+	display: none !important;
+}
+.ui-tabs-nav li {
+	float:left;
+	padding: 0 15px;
+	height:40px;
+	line-height:40px;
+}
+.ui-tabs-nav li.ui-state-active {
+	background: #ffffff;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	margin-top:8px;
+	height:33px;
+	line-height:32px;
+}
+.ui-tabs-nav li a {
+	font-family: 'Metrophobic', sans-serif;
+	font-size:16px;
+	color:#121212;
+	text-decoration:none;
+}
+/* Selectmenu
+----------------------------------*/
+.ui-selectmenu {
+	display: block;
+	position:relative;
+	height:32px;
+	text-decoration: none;
+	overflow:hidden;
+	background:#ffffff !important;
+	border: 0 none !important;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-family:Arial, Helvetica, sans-serif !important;
+	font-size:12px !important;
+	color:#3c3c3c !important;
+	font-weight:normal !important;
+	margin-top:3px;
+}
+.ui-selectmenu-icon {
+	position:absolute;
+	right:0;
+	top: 0;
+	background-repeat: no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+	height: 32px !important;
+	width: 37px !important;
+	background: url(../images/bg_search.png) no-repeat 0 -96px !important;
+}
+.ui-selectmenu-icon:hover {
+	background: url(../images/bg_search.png) no-repeat 0 -128px !important;
+}
+.ui-selectmenu-menu {
+	padding:0;
+	margin:0;
+	list-style:none;
+	position:absolute;
+	top: 0;
+	visibility: hidden;
+	overflow: auto;
+	display:none;
+}
+.ui-selectmenu-open {
+	visibility: visible;
+	display:block;
+}
+.ui-selectmenu-menu-popup {
+	margin-top: -1px;
+}
+.ui-selectmenu-menu-dropdown {
+	background:#ffffff !important;
+	border: 0 none !important;
+	color:#3c3c3c;
+	margin-top: -1px;
+	-webkit-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+.ui-selectmenu-menu li {
+	padding:0;
+	margin:0;
+	display: block;
+	border-top: 1px solid #ffffff;
+	font-weight: normal !important;
+}
+.ui-selectmenu-menu li a, .ui-selectmenu-status {
+	color:#3c3c3c !important;
+	line-height: 32px !important;
+	display:block;
+	padding:0 9px;
+	outline:none;
+	text-decoration:none;
+}
+.ui-selectmenu-menu li.ui-selectmenu-hasIcon a, .ui-selectmenu-hasIcon .ui-selectmenu-status {
+	padding-left: 20px;
+	position: relative;
+	margin-left: 5px;
+}
+.ui-selectmenu-menu li .ui-icon, .ui-selectmenu-status .ui-icon {
+	position: absolute;
+	top: 1em;
+	margin-top: -8px;
+	left: 0;
+}
+.ui-selectmenu-status {
+	line-height: 1.4em;
+}
+.ui-selectmenu-open li {
+	margin:1px 2px;
+	background:#ffffff !important;
+	border: 1px solid #ffffff !important;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.ui-selectmenu-open li a {
+	display:block;
+	padding: 0 8px;
+	margin: 0 1px;
+	line-height:30px;
+	height:30px;
+}
+.ui-selectmenu-open li.ui-selectmenu-item-focus a, .ui-selectmenu-open li.ui-selectmenu-item-selected a {
+	background:url(../images/bg_button.png) repeat-x 0 -23px !important;
+}
+.ui-selectmenu-open li.ui-selectmenu-item-selected, .ui-selectmenu-open li.ui-selectmenu-item-focus {
+	border: 1px solid #b3b3b3 !important;
+}
+.ui-selectmenu-menu li span, .ui-selectmenu-status span {
+	display:block;
+	margin-bottom: .2em;
+}
+.ui-selectmenu-menu li .ui-selectmenu-item-header {
+	font-weight: bold;
+}
+.ui-selectmenu-menu li .ui-selectmenu-item-content {
+}
+.ui-selectmenu-menu li .ui-selectmenu-item-footer {
+	opacity: .8;
+}
+/*for optgroups*/
+.ui-selectmenu-menu .ui-selectmenu-group {
+	font-size: 1em;
+}
+.ui-selectmenu-menu .ui-selectmenu-group .ui-selectmenu-group-label {
+	line-height: 1.4em;
+	display:block;
+	padding:.6em .5em 0;
+	font-weight: bold;
+}
+.ui-selectmenu-menu .ui-selectmenu-group ul {
+	margin: 0;
+	padding: 0;
+}
+/* fix for facebook like-button for min-width */
+#fb-root {
+	display:none;
+}
+/* twitter widget */
+.content .twtr-widget {
+	font-family:Arial, Helvetica, sans-serif !important;
+	font-size:13px !important;
+	line-height:19px !important;
+}
+.twtr-widget .twtr-hd {
+	display:none;
+}
+.twtr-widget .twtr-bd {
+	padding:0;
+}
+div.twtr-widget .twtr-tweet-wrap {
+	border-bottom:1px dashed #bdbdbd;
+	padding: 5px 0;
+}
+div.twtr-widget .twtr-tweet, .twtr-widget .twtr-results-hr {
+	border-bottom:1px solid #ffffff;
+}
+.twtr-widget .twtr-user {
+	display:none;
+}
+div.twtr-widget em {
+	color:#ffffff;
+	font-size:12px;
+	font-style:italic;
+	margin-top:0;
+}
+div.twtr-widget .twtr-bd p {
+	line-height:19px !important;
+}
+.twtr-widget em a, .twtr-widget .twtr-ft a {
+	display:none;
+}
+.twtr-widget em .twtr-timestamp, .twtr-widget .twtr-ft .twtr-join-conv {
+	display:inline-block;
+ *display:inline;
+	zoom:1;
+}
+#container .twtr-ft .twtr-join-conv {
+	color:#3c3c3c;
+}
+.twtr-widget .twtr-join-conv .icon {
+	background:url(../images/bg_twitter.png) no-repeat 0 0;
+	margin-right:8px;
+	height:12px;
+	width:13px;
+	display: inline-block;
+	zoom:1;
+*display:inline;
+	vertical-align:middle;
+	float:none;
+}
+.twtr-join-conv .wrap .wrap {
+	padding:0;
+}
+.twtr-widget .twtr-join-conv:hover .icon {
+	background-position:0 0;
+}
+.twtr-widget .twtr-ft div {
+	padding:10px 0 0;
+}
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+/* Browser Resets */
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+	outline: none;
+}
+.slides, .flex-control-nav, .flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {
+	margin: 0;
+	padding: 0;
+}
+.flexslider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+	display: block;
+}
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+/* Clearfix for the .slides element */
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+html[xmlns] .slides {
+	display: block;
+}
+* html .slides {
+	height: 1%;
+}
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+	display: block;
+}
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+	margin: 0 0 20px;
+	position: relative;
+}
+.flex-viewport {
+	max-height: 2000px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.loading .flex-viewport {
+	max-height: 300px;
+}
+.flexslider .slides {
+	zoom: 1;
+}
+.carousel li {
+	margin-right: 5px
+}
+/* Direction Nav */
+/*.flex-direction-nav {*height: 0;}*/
+/*.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}*/
+/*.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }*/
+/*.flex-direction-nav .flex-prev {left: -36px;}*/
+/*.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}*/
+/*.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}*/
+/*.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}*/
+/*.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}*/
+/* Control Nav */
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: -40px;
+	text-align: center;
+}
+.flex-control-nav li {
+	margin: 0 6px;
+	display: inline-block;
+	zoom: 1;
+*display: inline;
+}
+.flex-control-paging li a {
+	width: 11px;
+	height: 11px;
+	display: block;
+	background: #666;
+	background: rgba(0,0,0,0.5);
+	cursor: pointer;
+	text-indent: -9999px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+}
+.flex-control-paging li a:hover {
+	background: #333;
+	background: rgba(0,0,0,0.7);
+}
+.flex-control-paging li a.flex-active {
+	background: #000;
+	background: rgba(0,0,0,0.9);
+	cursor: default;
+}
+.flex-control-thumbs {
+	margin: 5px 0 0;
+	position: static;
+	overflow: hidden;
+}
+.flex-control-thumbs li {
+	width: 25%;
+	float: left;
+	margin: 0;
+}
+.flex-control-thumbs img {
+	width: 100%;
+	display: block;
+	opacity: .7;
+	cursor: pointer;
+}
+.flex-control-thumbs img:hover {
+	opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+	opacity: 1;
+	cursor: default;
+}
+ @media screen and (max-width: 860px) {
+.flex-direction-nav .flex-prev {
+	opacity: 1;
+	left: 0;
+}
+.flex-direction-nav .flex-next {
+	opacity: 1;
+	right: 0;
+}
+}

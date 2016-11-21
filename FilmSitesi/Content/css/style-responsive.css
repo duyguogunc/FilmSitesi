@@ -1,0 +1,585 @@
+/* #Tablet (Portrait)
+ ================================================== */
+
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	#slider .flex-direction-nav {
+		top: 43%;
+	}
+	.video_page #slider .flex-direction-nav .video_play {
+		left: 45%;
+	}
+	#video_frame iframe {
+		height: 300px;
+		width: 482px;
+	}
+	.container_12 .thumb {
+		margin-right: 20px;
+	}
+	.flexslider .slides img {
+		width: 482px;
+	}
+	.fb_iframe_widget {
+		overflow: hidden;
+		width: 199px;
+	}
+	#slider_nav li:hover, #slider_nav li.flex-active-slide {
+		background-position: -2px -103px;
+	}
+	#slider_nav li {
+		padding: 8px 15px 0 5px;
+	}
+	.node p {
+		margin-bottom: 10px;
+	}
+	#block-search-form .form-type-textfield input, #form_search_404 .form-text {
+		width: 184px;
+	}
+	#superfish_menu li a {
+		padding: 0px 14px;
+	}
+	#main_slider {
+		width: 483px;
+		height: auto;
+	}
+	#main_slider .slides li {
+		width: 483px;
+	}
+	#slider_nav {
+		height: 289px;
+	}
+	#movie_reviews .full {
+		clear: both;
+		display: block;
+		float: none;
+		padding-top: 10px;
+	}
+	#sidebar .block_title {
+		height: auto;
+		overflow: hidden;
+	}
+	.block_title span.title {
+		display: block;
+		float: left;
+		width: 63%;
+	}
+	#sidebar .block_title a {
+		margin-top: 13px;
+	}
+	#sidebar .block_title .button_small {
+		margin-top: 0px;
+	}
+	#block_trailers .details {
+		width: 104px;
+	}
+	#block_showtimes .form_location {
+		width: 157px;
+	}
+	#block_showtimes label {
+		display: block;
+	}
+	#form_titles {
+		width: 208px;
+	}
+	#form_titles_showtimes {
+		width: 208px;
+	}
+	#block_photo_galleries .photo, #block_trailers_accordion .photo {
+		width: 110px;
+	}
+	#block_photo_galleries .details, #block_trailers_accordion .details {
+		width: 81px;
+	}
+	#sidebar #block_photo_galleries .block_title a {
+		margin-top: 0px;
+	}
+	#sidebar .block_title {
+		font-size: 15px;
+	}
+	a .wrap_me, #carousel li .wrap_me {
+		width: 95%;
+	}
+	#block_inTheaters  img {
+		width: 125px !important;
+	}
+	.content {
+		margin-left: 0px !important;
+	}
+	.ui-tabs-nav li {
+		padding: 0px 10px;
+	}
+	.ui-tabs-nav li a {
+		font-size: 12px;
+	}
+	#block_comments .details {
+		width: 130px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#content table th {
+		font-size: 13px;
+	}
+	#video_frame iframe {
+		height: 180px;
+		width: 290px;
+	}
+	.sort_cont {
+		display: none;
+	}
+	#block_inTheaters  img {
+		width: 125px !important;
+	}
+	#logo {
+		position: relative;
+		z-index: 1000;
+	}
+	#sorted img {
+		width: 96%;
+	}
+	.flexslider .slides img {
+		width: 450px;
+	}
+	.resp-menu-hidden li a {
+		width: 238px !important;
+	}
+	.resp-menu-hidden .active a {
+		width: 238px !important;
+	}
+	.ui-tabs-nav li {
+		height: auto;
+		padding: 0px 7px;
+		line-height: 20px !important;
+	}
+	.ui-tabs-nav li a {
+		word-wrap: break-word;
+		font-size: 14px;
+	}
+	.ui-tabs-nav li.ui-state-active {
+		height: 41px;
+	}
+	.ui-tabs .ui-tabs-nav {
+		height: 49px;
+	}
+	.ui-tabs .ui-tabs-nav li {
+		white-space: normal;
+		margin-top: 8px;
+		width: 57px;
+		text-align: center;
+	}
+	#block_tabs .ui-tabs-nav li {
+		width: 65px;
+	}
+	#slider .flex-direction-nav {
+		top: 40%;
+	}
+	.video_page #slider .flex-direction-nav .video_play {
+		left: 43%;
+	}
+	#main_tabs .flex-viewport .slides img {
+		width: 100px;
+	}
+	#main_tabs .flex-viewport .slides li {
+		width: 142px;
+	}
+	#form_search_404 .form-text {
+		width: 232px !important;
+	}
+	#form_search_404 {
+		padding-top: 30px;
+	}
+	.blog .details li {
+		margin-bottom: 5px;
+	}
+	.ui-tabs .ui-tabs-nav li {
+		width: 55px;
+	}
+	.ui-tabs-nav li {
+		padding: 0px 10px;
+	}
+	.ui-tabs-nav li a {
+		font-size: 12px;
+		line-height: 36px;
+	}
+	#related_posts .details {
+		width: 135px;
+	}
+	#contact_form input, #contact_form textarea {
+		width: 285px;
+	}
+	#sidebar {
+		margin-top: 20px;
+	}
+	.node .critics_say p {
+		margin: 0 10px;
+	}
+	.content .wrap_me.wrap_video {
+		max-width: 290px;
+	}
+	.grid_8.omega {
+		margin-left: 0px;
+	}
+	.row .grid_4 {
+		margin-left: 0px;
+	}
+	#content table th {
+		padding: 0px 5px;
+	}
+	#content table td {
+		padding: 12px 5px 10px;
+	}
+}
+/*  #Mobile (Portrait)
+ ================================================== */
+
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	#slider .flex-direction-nav {
+		top: 43%;
+	}
+	.video_page #slider .flex-direction-nav .video_play {
+		left: 44%;
+	}
+	#video_frame iframe {
+		height: 280px;
+		width: 450px;
+	}
+	.flexslider .slides img {
+		width: 290px;
+	}
+	#block_inTheaters  img {
+		width: 115px !important;
+	}
+	#main_tabs .ui-tabs-nav li a {
+		line-height: 16px !important;
+	}
+	.node .critics_say p {
+		margin: 0 10px;
+	}
+	#sidebar {
+		margin-top: 20px;
+	}
+	body.front {
+		padding-top: 20px;
+	}
+	#superfish_menu {
+		display: none;
+	}
+	.responsive-menu-items {
+		display: block;
+	}
+	.responsive-menu-items .active a {
+		width: 235px;
+	}
+	.responsive-menu-items .active ul {
+	}
+	#header {
+		position: relative;
+	}
+	#logo a {
+		display: none;
+	}
+	#logo .responsive-logo {
+		display: block !important;
+	}
+	#header .grid_4:last-child {
+		position: absolute;
+		right: 0px;
+		top: 40px;
+	}
+	#header #block-search-form .form-type-textfield input, #form_search_404 .form-text {
+		width: 248px;
+	}
+	#main_slider {
+		width: 290px;
+		height: auto;
+	}
+	#main_slider .slides li {
+		width: 290px;
+	}
+
+	#slider_nav {
+		display: none !important;
+	}
+
+	#movie_reviews li {
+		width: 40%;
+	}
+	#movie_reviews .title, .news .title {
+		line-height: 24px;
+	}
+	#movie_reviews {
+		margin-left: 0px;
+		margin-bottom: 10px;
+	}
+	#movie_reviews li {
+		width: 43%;
+	}
+
+	.news {
+		margin-bottom: 20px;
+	}
+	.news .details_text {
+		display: none;
+	}
+	.news li {
+		border: none;
+	}
+	#movie_reviews .full {
+		clear: both;
+		display: block;
+		float: none;
+		padding-top: 10px;
+	}
+
+	#block_trailers ul {
+		overflow: hidden;
+	}
+	#block_trailers li {
+		float: left;
+		width: 270px;
+		margin-left: 0px;
+	}
+	#block_trailers .photo {
+		height: auto;
+		width: 102px;
+		margin-bottom: 7px;
+	}
+	#block_trailers .details {
+		padding: 0px 0px 0px 10px;
+		width: 150px;
+	}
+	#block_trailers_accordion ul {
+		overflow: hidden;
+	}
+	#block_trailers_accordion li {
+		float: left;
+		width: 420px;
+		margin-left: 0px;
+	}
+	#block_trailers_accordion .photo {
+		height: auto;
+		width: 102px;
+		margin-bottom: 7px;
+		margin-right: 10px;
+	}
+	#block_trailers_accordion .details {
+		padding: 0px 0px 0px 10px;
+		width: 150px;
+	}
+
+	#block_showtimes .form_location {
+		width: 220px;
+	}
+	#form_titles {
+		width: 270px;
+	}
+	.navigation .form-type-select #form_titles {
+		width: 244px;
+	}
+	#form_titles_showtimes {
+		width: 270px;
+	}
+	.form-type-select #form_titles {
+		width: 270px;
+	}
+	#block_photo_galleries .details {
+		width: 124px;
+	}
+	.news li {
+		border-right: 1px solid #696969;
+		margin-right: 10px;
+		padding-right: 9px;
+		margin-left: 0px;
+		padding-left: 0px;
+		float: left;
+	}
+	.news li:last-child {
+		border: 0px;
+	}
+
+	#block_footer_menu li {
+		margin: 4px 0;
+	}
+	.resp-menu-hidden li a {
+		width: 398px;
+	}
+
+	.content {
+		margin-left: 0px !important;
+	}
+	#block_comments .details {
+		width: 200px;
+	}
+}
+
+/* #Mobile (Landscape)
+ ================================================== */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.sort_cont {
+		display: none;
+	}
+	.grid_8.omega, .row .grid_4 {
+		margin-left: 0px !important;
+	}
+	.flexslider .slides img {
+		width: 450px;
+	}
+	#superfish_menu {
+		display: none;
+	}
+	.responsive-menu-items {
+		display: block;
+	}
+	#logo a {
+		display: none;
+	}
+	#logo .responsive-logo {
+		display: block !important;
+	}
+	.responsive-menu-items .active a {
+		width: 395px;
+	}
+	#header .grid_4 {
+		width: 45%;
+	}
+	#header #block-search-form .form-type-textfield input, #form_search_404 .form-text {
+		width: 163px;
+	}
+	#header .grid_4.search-form {
+		float: right;
+		position: relative;
+		top: 45px;
+	}
+	#header .grid_4:last-child {
+		float: right;
+		margin-right: 11px;
+		position: relative;
+		top: -45px;
+	}
+	.tabs_slider li {
+		width: 146px;
+	}
+	.resp-menu-hidden li {
+		width: 460px;
+	}
+	#main_menu {
+		height: auto;
+	}
+	#superfish_menu {
+		margin: 0px 10px;
+		padding: 0px 3px;
+		margin-bottom: 15px;
+	}
+	#superfish_menu li {
+	}
+	#superfish_menu li a {
+		width: 103px;
+		padding: 0px;
+		text-align: center;
+	}
+	#superfish_menu li .corner {
+	}
+	#superfish_menu {
+		margin: 0 10px 15px;
+		padding: 0;
+	}
+	#main_slider {
+		width: 450px;
+		height: auto;
+	}
+	#main_slider .slides li {
+		width: 450px;
+	}
+
+	#slider_nav {
+		height: 270px;
+	}
+	#content #box_office .name {
+		width: 355px;
+	}
+	#movie_reviews {
+		margin-left: 0px;
+		margin-bottom: 10px;
+	}
+	.details_text {
+		overflow: hidden;
+	}
+	.news {
+		margin-bottom: 20px;
+	}
+	#block_trailers ul {
+		overflow: hidden;
+	}
+	#block_trailers li:first-child {
+		margin-left: 0px;
+	}
+	#block_trailers li {
+		float: left;
+		width: 130px;
+		margin-left: 19px;
+	}
+	#block_trailers .photo {
+		height: auto;
+		width: 122px;
+		margin-bottom: 7px;
+	}
+	#block_trailers .details {
+		padding: 0px;
+	}
+
+	#block_photo_galleries ul {
+		overflow: hidden;
+	}
+	#block_photo_galleries li:first-child {
+		margin-top: 15px;
+	}
+	#block_photo_galleries li {
+		width: 205px;
+		margin-right: 20px;
+		float: left;
+	}
+	#block_photo_galleries li.mr0 {
+		margin-right: 0px;
+	}
+	#block_photo_galleries .photo {
+		width: 205px;
+	}
+	#block_photo_galleries .photo img {
+		width: 195px;
+	}
+	#block_photo_galleries .details {
+		padding: 5px 0px 0px 0px;
+	}
+	#block_showtimes .form_location {
+		width: 381px;
+	}
+	#form_titles {
+		width: 431px;
+	}
+	#form_titles_showtimes {
+		width: 431px;
+	}
+	.form-type-select #form_titles {
+		width: 430px;
+	}
+	.navigation .form-type-select #form_titles {
+		width: 404px;
+	}
+	#footer .grid_8 {
+		width: 53%;
+		float: left;
+	}
+	#footer .grid_4 {
+		width: 38%;
+	}
+	#block_footer_menu li {
+		margin: 4px 0;
+	}
+	.content .wrap_me.wrap_video {
+		max-width: 360px;
+	}
+}
